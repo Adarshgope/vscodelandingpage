@@ -1,0 +1,78 @@
+body{
+    background-color: #0e0e0e;
+}
+.toplink{
+    color: gray;cursor: pointer;padding-right: 10px;
+}
+.baby{
+    color:skyblue;cursor: pointer;
+}
+body {
+  background-color: #0d1117;
+  font-family: Arial, sans-serif;
+}
+
+.banner {
+  width: 100%;
+  max-width: 1100px;
+  height: 200px;
+  margin: 40px auto;
+  border-radius: 12px;
+
+  /* Background image */
+  background-image: url("https://code.visualstudio.com/assets/home/copilot-free-banner-bg-dark.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Overlay effect */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark overlay */
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.7)
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.content h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.content p {
+  margin: 10px 0 20px;
+  color: #c9d1d9;
+}
+
+.content button {
+  width: fit-content;
+  padding: 10px 18px;
+  background: transparent;
+  border: 1px solid #8b949e;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.content button:hover {
+  background: rgba(255,255,255,0.1);
+}
